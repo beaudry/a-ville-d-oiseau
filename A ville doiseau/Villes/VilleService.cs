@@ -12,7 +12,7 @@ namespace A_ville_doiseau.Villes
         private static readonly string caracteresPourJoindre = "%7C";
         private static readonly string ajouterQuebecALaFin = "{0} (Québec)";
         private static readonly string ajouterVilleALaFin = "{0} (ville)";
-        private static readonly XmlSerializer serialiseur = new XmlSerializer(typeof(Ville[]));
+        private readonly XmlSerializer serialiseur = new XmlSerializer(typeof(Ville[]));
 
         public async Task ChargerVillesDepuisInternet()
         {

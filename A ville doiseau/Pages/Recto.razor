@@ -1,0 +1,17 @@
+﻿@using A_ville_doiseau.Villes
+
+<div class="carte">
+    <div class="image-fond">
+        <a href="@ville.LienWikipedia">
+            <img src="@ville.Image" />
+        </a>
+    </div>
+    <div class="libelle fond-blanc">
+        <h2 class="nom">@ville.Nom</h2>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Ville ville { get; set; } = default!;
+}

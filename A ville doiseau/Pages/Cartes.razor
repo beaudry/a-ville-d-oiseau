@@ -19,56 +19,72 @@
     else
     {
         <div class="noprint" >
-            <label>
+            <label class="champ">
                 Point de départ:
-                <select @onchange="@ChangerVilleDepart">
-                    @foreach (var ville in villes)
+                <select @onchange="ChangerVilleDepart">
+                    @foreach (var ville in villes.OrderBy(ville=>ville.Nom))
                     {
                         <option value="@ville.Nom">@ville.Nom</option>
                     }
                 </select>
             </label>
             
-            <label>
-                Cartes par feuille:
-                <input type="number" @bind="nombreCartesParFeuille" />
-            </label>
+            <div class="champ">
+                <label>
+                    Trier par:
+                    <select @onchange="ChangerTri">
+                        <option value="@Tri.Defaut">Défaut</option>
+                        <option value="@Tri.Distance">Distance</option>
+                        <option value="@Tri.Alphabetique">Nom</option>
+                    </select>
+                </label>
+                
+                <label><input type="checkbox" @bind="triInverse" /> Inverser</label>
+            </div>
+            
+            <fieldset class="champ">
+                <legend>Mode visuel</legend>
+                <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression</label></div>
+                <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
+            </fieldset>
+
+            @if (modeVisuel == ModeVisuel.Impression)
+            {
+                <label class="champ">
+                    Cartes par feuille:
+                    <input type="number" @bind="nombreCartesParFeuille" min="1" max="@villes.Length" />
+                </label>
+            }
         </div>
 
-        @foreach (var page in GetVillesPaginees())
+
+        @if (modeVisuel == ModeVisuel.Impression)
+        {
+            @foreach (var page in GetVillesPaginees())
+            {
+                <div class="cartes">
+                    @foreach (var ville in page)
+                    {
+                        <Recto ville="ville" />
+                    }
+                </div>
+
+                <div class="cartes verso">
+                    @foreach (var ville in page)
+                    {
+                        <Verso ville="ville" villeDepart="villeDepart" />
+                    }
+                </div>
+            }
+
+        }
+        else
         {
             <div class="cartes">
-                @foreach (var ville in page)
+                @foreach (var ville in GetVillesTriees())
                 {
-                    <div class="carte">
-                        <div class="image-fond">
-                            <a href="@ville.LienWikipedia">
-                                <img src="@ville.Image" />
-                            </a>
-                        </div>
-                        <div class="libelle fond-blanc">
-                            <h2 class="nom">@ville.Nom</h2>
-                        </div>
-                    </div>
-                }
-            </div>
-
-            <div class="cartes verso">
-                @foreach (var ville in page)
-                {
-                    <div class="carte">
-                        <div class="image-fond">
-                            <a href="@ville.LienWikipedia">
-                                <img src="@ville.Image" />
-                            </a>
-                        </div>
-                        <div class="libelle fond-blanc">
-                            <h2 class="distance">
-                                @string.Format("{0:#,##0} km", ville.Coordonnees.GetDistanceTo(villeDepart.Coordonnees) / 1000)
-                            </h2>
-                            <h4 class="nom">@ville.Nom</h4>
-                        </div>
-                    </div>
+                    <Recto ville="ville" />
+                    <Verso ville="ville" villeDepart="villeDepart" />
                 }
             </div>
         }
@@ -76,6 +92,22 @@
 </div>
 
 @code {
+    enum ModeVisuel
+    {
+        Debogage,
+        Impression
+    }
+
+    enum Tri
+    {
+        Defaut,
+        Distance,
+        Alphabetique
+    }
+
+    private ModeVisuel modeVisuel = ModeVisuel.Impression;
+    private Tri tri = Tri.Defaut;
+    private bool triInverse = false;
     private Ville[]? villes;
     private Ville? villeDepart;
     private int nombreCartesParFeuille = 16;
@@ -86,9 +118,32 @@
         villeDepart = villes[0];
     }
 
+    IEnumerable<Ville> GetVillesTriees()
+    {
+        IEnumerable<Ville> villesTriees = villes!;
+
+        switch (tri)
+        {
+            case Tri.Alphabetique:
+                villesTriees = villesTriees.OrderBy(ville => ville.Nom);
+                break;
+            case Tri.Distance:
+                villesTriees = villesTriees.OrderBy(ville => ville.Coordonnees.GetDistanceTo(villeDepart.Coordonnees));
+                break;
+        }
+
+        if (triInverse)
+        {
+            villesTriees = villesTriees.Reverse();
+        }
+
+        return villesTriees;
+    }
+
+
     Ville[][] GetVillesPaginees()
     {
-        return villes
+        return GetVillesTriees()
             .Select((ville, index) => new { Index = index, Ville = ville })
             .GroupBy(x => x.Index / nombreCartesParFeuille)
             .Select(x => x.Select(v => v.Ville).ToArray())
@@ -98,5 +153,15 @@
     void ChangerVilleDepart(ChangeEventArgs evenement)
     {
         villeDepart = villes.First(ville => ville.Nom.Equals(evenement.Value));
+    }
+    
+    void ChangerVisuel(ChangeEventArgs evenement)
+    {
+        modeVisuel = Enum.Parse<ModeVisuel>((string)evenement.Value!);
+    }
+
+    void ChangerTri(ChangeEventArgs evenement)
+    {
+        tri = Enum.Parse<Tri>((string)evenement.Value!);
     }
 }

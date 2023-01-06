@@ -25,8 +25,8 @@
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
-
-  <ItemGroup>
+	
+	<ItemGroup>
     <PackageReference Include="GeoCoordinate.NetCore" Version="1.0.0.1" />
   </ItemGroup>
 
