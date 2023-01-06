@@ -1,4 +1,5 @@
 ﻿using A_ville_doiseau.Properties;
+using GeoCoordinatePortable;
 using System.Xml.Serialization;
 
 namespace A_ville_doiseau.Villes
@@ -11,7 +12,6 @@ namespace A_ville_doiseau.Villes
         private static readonly string caracteresPourJoindre = "%7C";
         private static readonly string ajouterQuebecALaFin = "{0} (Québec)";
         private static readonly string ajouterVilleALaFin = "{0} (ville)";
-        private static readonly Random random = new Random(6);
         private static readonly XmlSerializer serialiseur = new XmlSerializer(typeof(Ville[]));
 
         public async Task ChargerVillesDepuisInternet()
@@ -56,9 +56,8 @@ namespace A_ville_doiseau.Villes
                 return new Ville
                 {
                     Nom = nomVille,
-                    Image = image,
-                    Latitutde = coord?.Lat ?? 0,
-                    Longitude = coord?.Lon ?? 0,
+                    Image = image!,
+                    Coordonnees = coord != null ? new GeoCoordinate(coord.Lat, coord.Lon) : new GeoCoordinate(0, 0),
                     LienWikipedia = lienWikipedia.Replace(" ", "%20"),
                 };
             }).ToArray();

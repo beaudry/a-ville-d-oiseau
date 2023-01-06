@@ -1,4 +1,4 @@
-﻿h2, h3 {
+﻿h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
@@ -18,6 +18,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    page-break-inside:avoid;
 }
 
 .image-fond {
@@ -26,6 +27,7 @@
     left:0;
     right:0;
     bottom: 0;
+    display: flex;
     justify-content: center;
 }
 
@@ -45,6 +47,10 @@
     width: 100%;
     position: absolute;
     bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
 }
 
 .fond-blanc {
@@ -52,15 +58,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: rgba(255,255,255,0.7);
-}
-
-.distance {
-    position: absolute;
-    top:0;
-    right:0;
-    padding: 0 1em;
-    height: 54px;
+    background-color: rgba(255,255,255,0.87);
 }
 
 .newfoundland {
@@ -72,4 +70,10 @@
     transform-origin: bottom right;
     transform: rotate(-90deg);
     width: 200px;
+}
+
+@media print {
+    .noprint {
+        display: none;
+    }
 }

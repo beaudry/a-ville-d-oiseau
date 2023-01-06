@@ -5,12 +5,4 @@
     Layout = "_Layout";
 }
 
- <link rel="stylesheet" href="@Url.Content("/lib/leaflet/dist/leaflet.css")"/>
- <script src="@Url.Content("/lib/leaflet/dist/leaflet.js")"></script>
- <style>
-    .leaflet-marker-pane :last-child {
-        filter: hue-rotate(120deg);
-    }
- </style>
-
-<component type="typeof(App)" render-mode="ServerPrerendered" />
+<component type="typeof(Cartes)" render-mode="ServerPrerendered" />
