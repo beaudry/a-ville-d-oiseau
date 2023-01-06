@@ -9,59 +9,90 @@
 @using A_ville_doiseau.Villes
 @inject VilleService VilleService
 
-<h1 class="noprint">Les différentes villes</h1>
+<div class="contenu">
+    <h1 class="noprint">Les différentes villes</h1>
 
-@if (villes == null || villeDepart == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <select class="noprint" @onchange="@ChangerVilleDepart">
-        @foreach (var ville in villes)
-        {
-            <option value="@ville.Nom">@ville.Nom</option>
-        }
-    </select>
+    @if (villes == null || villeDepart == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="noprint" >
+            <label>
+                Point de départ:
+                <select @onchange="@ChangerVilleDepart">
+                    @foreach (var ville in villes)
+                    {
+                        <option value="@ville.Nom">@ville.Nom</option>
+                    }
+                </select>
+            </label>
+            
+            <label>
+                Cartes par feuille:
+                <input type="number" @bind="nombreCartesParFeuille" />
+            </label>
+        </div>
 
-    <div class="cartes">
-        @foreach (var ville in villes)
+        @foreach (var page in GetVillesPaginees())
         {
-            <div class="carte recto">
-                <div class="image-fond">
-                    <a href="@ville.LienWikipedia">
-                        <img src="@ville.Image" />
-                    </a>
-                </div>
-                <div class="libelle fond-blanc">
-                    <h2 class="nom">@ville.Nom</h2>
-                </div>
+            <div class="cartes">
+                @foreach (var ville in page)
+                {
+                    <div class="carte">
+                        <div class="image-fond">
+                            <a href="@ville.LienWikipedia">
+                                <img src="@ville.Image" />
+                            </a>
+                        </div>
+                        <div class="libelle fond-blanc">
+                            <h2 class="nom">@ville.Nom</h2>
+                        </div>
+                    </div>
+                }
             </div>
-            <div class="carte verso">
-                <div class="image-fond">
-                    <a href="@ville.LienWikipedia">
-                        <img src="@ville.Image" />
-                    </a>
-                </div>
-                <div class="libelle fond-blanc">
-                    <h2 class="distance">
-                        @string.Format("{0:#,##0} km", ville.Coordonnees.GetDistanceTo(villeDepart.Coordonnees) / 1000)
-                    </h2>
-                    <h4 class="nom">@ville.Nom</h4>
-                </div>
+
+            <div class="cartes verso">
+                @foreach (var ville in page)
+                {
+                    <div class="carte">
+                        <div class="image-fond">
+                            <a href="@ville.LienWikipedia">
+                                <img src="@ville.Image" />
+                            </a>
+                        </div>
+                        <div class="libelle fond-blanc">
+                            <h2 class="distance">
+                                @string.Format("{0:#,##0} km", ville.Coordonnees.GetDistanceTo(villeDepart.Coordonnees) / 1000)
+                            </h2>
+                            <h4 class="nom">@ville.Nom</h4>
+                        </div>
+                    </div>
+                }
             </div>
         }
-    </div>
-}
+    }
+</div>
 
 @code {
     private Ville[]? villes;
     private Ville? villeDepart;
+    private int nombreCartesParFeuille = 16;
 
     protected override void OnInitialized()
     {
         villes = VilleService.ChargerVilles();
         villeDepart = villes[0];
+    }
+
+    Ville[][] GetVillesPaginees()
+    {
+        return villes
+            .Select((ville, index) => new { Index = index, Ville = ville })
+            .GroupBy(x => x.Index / nombreCartesParFeuille)
+            .Select(x => x.Select(v => v.Ville).ToArray())
+            .ToArray();
     }
 
     void ChangerVilleDepart(ChangeEventArgs evenement)
