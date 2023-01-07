@@ -3,11 +3,9 @@
 @using A_villes_d_oiseau.Villes
 @inject VilleService VilleService
 
-<h1 class="noprint">Les différentes villes</h1>
-
 @if (villes == null || villeDepart == null)
 {
-    <p><em>Loading...</em></p>
+    <p>Chargement...</p>
 }
 else
 {
