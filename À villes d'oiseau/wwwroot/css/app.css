@@ -36,8 +36,13 @@ h2, h3, h4 {
     padding: 0;
 }
 
-.contenu {
-    margin: 2em 4em;
+body {
+    padding: 2em 4em;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: -2em;
 }
 
 .champ {
@@ -109,8 +114,8 @@ h2, h3, h4 {
 }
 
 @media print {
-    .contenu {
-        margin: 0;
+    body {
+        padding: 0;
     }
 
     .cartes {

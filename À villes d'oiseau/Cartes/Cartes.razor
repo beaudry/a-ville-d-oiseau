@@ -3,87 +3,85 @@
 @using A_villes_d_oiseau.Villes
 @inject VilleService VilleService
 
-<div class="contenu">
-    <h1 class="noprint">Les différentes villes</h1>
+<h1 class="noprint">Les différentes villes</h1>
 
-    @if (villes == null || villeDepart == null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else
-    {
-        <div class="noprint" >
-            <label class="champ">
-                Point de départ:
-                <select @onchange="ChangerVilleDepart">
-                    @foreach (var ville in villes.OrderBy(ville => ville.Nom))
-                    {
-                        <option selected="@villeDepart.Equals(ville)" value="@ville.Nom">@ville.Nom</option>
-                    }
+@if (villes == null || villeDepart == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="noprint" >
+        <label class="champ">
+            Point de départ:
+            <select @onchange="ChangerVilleDepart">
+                @foreach (var ville in villes.OrderBy(ville => ville.Nom))
+                {
+                    <option selected="@villeDepart.Equals(ville)" value="@ville.Nom">@ville.Nom</option>
+                }
+            </select>
+        </label>
+            
+        <div class="champ">
+            <label>
+                Trier par:
+                <select @onchange="ChangerTri">
+                    <option value="@Tri.Defaut">Défaut</option>
+                    <option value="@Tri.Distance">Distance</option>
+                    <option value="@Tri.Alphabetique">Nom</option>
                 </select>
             </label>
-            
-            <div class="champ">
-                <label>
-                    Trier par:
-                    <select @onchange="ChangerTri">
-                        <option value="@Tri.Defaut">Défaut</option>
-                        <option value="@Tri.Distance">Distance</option>
-                        <option value="@Tri.Alphabetique">Nom</option>
-                    </select>
-                </label>
                 
-                <label><input type="checkbox" @bind="triInverse" /> Inverser</label>
-            </div>
-            
-            <fieldset class="champ">
-                <legend>Mode visuel</legend>
-                <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
-                <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
-            </fieldset>
-
-            @if (modeVisuel == ModeVisuel.Impression)
-            {
-                <label class="champ">
-                    Cartes par feuille:
-                    <input type="number" @bind="nombreCartesParFeuille" min="1" max="@villes.Length" />
-                </label>
-            }
+            <label><input type="checkbox" @bind="triInverse" /> Inverser</label>
         </div>
-
+            
+        <fieldset class="champ">
+            <legend>Mode visuel</legend>
+            <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
+            <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
+        </fieldset>
 
         @if (modeVisuel == ModeVisuel.Impression)
         {
-            @foreach (var page in GetVillesPaginees())
-            {
-                <div class="cartes">
-                    @foreach (var ville in page)
-                    {
-                        <Recto ville="ville" />
-                    }
-                </div>
-
-                <div class="cartes verso">
-                    @foreach (var ville in page)
-                    {
-                        <Verso ville="ville" villeDepart="villeDepart" />
-                    }
-                </div>
-            }
-
+            <label class="champ">
+                Cartes par feuille:
+                <input type="number" @bind="nombreCartesParFeuille" min="1" max="@villes.Length" />
+            </label>
         }
-        else
+    </div>
+
+
+    @if (modeVisuel == ModeVisuel.Impression)
+    {
+        @foreach (var page in GetVillesPaginees())
         {
-            <div class="cartes debogage">
-                @foreach (var ville in GetVillesTriees())
+            <div class="cartes">
+                @foreach (var ville in page)
                 {
                     <Recto ville="ville" />
+                }
+            </div>
+
+            <div class="cartes verso">
+                @foreach (var ville in page)
+                {
                     <Verso ville="ville" villeDepart="villeDepart" />
                 }
             </div>
         }
+
     }
-</div>
+    else
+    {
+        <div class="cartes debogage">
+            @foreach (var ville in GetVillesTriees())
+            {
+                <Recto ville="ville" />
+                <Verso ville="ville" villeDepart="villeDepart" />
+            }
+        </div>
+    }
+}
 
 @code {
     enum ModeVisuel
