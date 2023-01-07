@@ -1,7 +1,6 @@
-﻿
-using GeoCoordinatePortable;
+﻿using GeoCoordinatePortable;
 
-namespace A_ville_doiseau.Villes
+namespace A_villes_d_oiseau.Villes
 {
     public class Ville
     {

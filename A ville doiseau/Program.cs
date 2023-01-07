@@ -1,5 +1,5 @@
-using A_ville_doiseau.Pages;
-using A_ville_doiseau.Villes;
+using A_villes_d_oiseau.Cartes;
+using A_villes_d_oiseau.Villes;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
