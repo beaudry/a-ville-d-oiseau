@@ -1,10 +1,7 @@
 ﻿@inherits LayoutComponentBase
 @page "/"
-@inject IJSRuntime JS
-@using System.Globalization;
-@using GeoCoordinatePortable;
 
-<PageTitle>Villes</PageTitle>
+<PageTitle>À villes d'oiseau</PageTitle>
 
 @using A_ville_doiseau.Villes
 @inject VilleService VilleService
@@ -22,9 +19,9 @@
             <label class="champ">
                 Point de départ:
                 <select @onchange="ChangerVilleDepart">
-                    @foreach (var ville in villes.OrderBy(ville=>ville.Nom))
+                    @foreach (var ville in villes.OrderBy(ville => ville.Nom))
                     {
-                        <option value="@ville.Nom">@ville.Nom</option>
+                        <option selected="@villeDepart.Equals(ville)" value="@ville.Nom">@ville.Nom</option>
                     }
                 </select>
             </label>
@@ -112,9 +109,9 @@
     private Ville? villeDepart;
     private int nombreCartesParFeuille = 16;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        villes = VilleService.ChargerVilles();
+        villes = await VilleService.ChargerVilles();
         villeDepart = villes[0];
     }
 

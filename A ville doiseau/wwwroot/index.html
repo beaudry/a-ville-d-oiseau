@@ -1,17 +1,15 @@
-﻿@using Microsoft.AspNetCore.Components.Web
-@namespace A_ville_doiseau.Pages
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="~/" />
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link href="css/site.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>A ville doiseau</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
     <link href="A ville doiseau.styles.css" rel="stylesheet" />
-    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+
     <style>
         h2, h3, h4 {
             margin: 0;
@@ -33,10 +31,10 @@
             justify-content: center;
         }
 
-        .cartes.verso {
-            page-break-before: always;
-            flex-direction: row-reverse;
-        }
+            .cartes.verso {
+                page-break-before: always;
+                flex-direction: row-reverse;
+            }
 
         .carte {
             width: 275px;
@@ -46,14 +44,14 @@
             position: relative;
             overflow: hidden;
             text-align: center;
-            page-break-inside:avoid;
+            page-break-inside: avoid;
         }
 
         .image-fond {
             position: absolute;
-            top:0;
-            left:0;
-            right:0;
+            top: 0;
+            left: 0;
+            right: 0;
             bottom: 0;
             display: flex;
             justify-content: center;
@@ -86,7 +84,7 @@
         .newfoundland {
             position: absolute;
             right: 0;
-            top:-21px;
+            top: -21px;
             height: 75px;
             padding: 0 1em;
             transform-origin: bottom right;
@@ -94,27 +92,23 @@
             width: 200px;
         }
 
-        @@media print {
+        @media print {
             .noprint {
                 display: none;
             }
         }
     </style>
 </head>
+
 <body>
-    @RenderBody()
+    <div id="app">Loading...</div>
 
     <div id="blazor-error-ui">
-        <environment include="Staging,Production">
-            An error has occurred. This application may no longer respond until reloaded.
-        </environment>
-        <environment include="Development">
-            An unhandled exception has occurred. See browser dev tools for details.
-        </environment>
+        An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-
-    <script src="_framework/blazor.server.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
 </body>
+
 </html>
