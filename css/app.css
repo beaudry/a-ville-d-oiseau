@@ -50,13 +50,16 @@ h2, h3, h4 {
 .cartes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
     .cartes.verso {
         page-break-before: always;
         flex-direction: row-reverse;
     }
+
+.debogage.cartes {
+    gap: 1em;
+}
 
 .carte {
     width: 275px;
@@ -67,6 +70,10 @@ h2, h3, h4 {
     overflow: hidden;
     text-align: center;
     page-break-inside: avoid;
+}
+
+.debogage .carte {
+    border-radius: 16px;
 }
 
 .image-fond {
@@ -103,20 +110,13 @@ h2, h3, h4 {
     background-color: rgba(255,255,255,0.87);
 }
 
-.newfoundland {
-    position: absolute;
-    right: 0;
-    top: -21px;
-    height: 75px;
-    padding: 0 1em;
-    transform-origin: bottom right;
-    transform: rotate(-90deg);
-    width: 200px;
-}
-
 @media print {
     .contenu {
         margin: 0;
+    }
+
+    .cartes {
+        justify-content: center;
     }
 
     .noprint {
