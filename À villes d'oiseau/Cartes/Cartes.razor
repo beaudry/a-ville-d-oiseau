@@ -38,7 +38,7 @@
             
             <fieldset class="champ">
                 <legend>Mode visuel</legend>
-                <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression</label></div>
+                <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
                 <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
             </fieldset>
 
@@ -74,7 +74,7 @@
         }
         else
         {
-            <div class="cartes">
+            <div class="cartes debogage">
                 @foreach (var ville in GetVillesTriees())
                 {
                     <Recto ville="ville" />

@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "A ville doiseau": {
+    "A villes d'oiseau": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
