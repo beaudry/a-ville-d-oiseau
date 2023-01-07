@@ -1,7 +1,4 @@
-﻿@inherits LayoutComponentBase
-@page "/"
-
-<PageTitle>À villes d'oiseau</PageTitle>
+﻿@page "/"
 
 @using A_ville_doiseau.Villes
 @inject VilleService VilleService
@@ -102,7 +99,7 @@
         Alphabetique
     }
 
-    private ModeVisuel modeVisuel = ModeVisuel.Impression;
+    private ModeVisuel modeVisuel = ModeVisuel.Debogage;
     private Tri tri = Tri.Defaut;
     private bool triInverse = false;
     private Ville[]? villes;
