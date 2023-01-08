@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>A_villes_d_oiseau</RootNamespace>
+    <AssemblyName>A_villes_d_oiseau</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

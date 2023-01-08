@@ -3,10 +3,11 @@
 <div class="carte">
     <div class="image-fond">
         <a href="@ville.LienWikipedia">
-            <img src="@ville.Image" />
+            <Image image=@ville.Image />
         </a>
     </div>
     <div class="libelle fond-blanc">
+        <Filigrane nomVille=@villeDepart.Nom />
         <h2 class="distance">
             @string.Format("{0:#,##0} km", ville.Coordonnees.GetDistanceTo(villeDepart.Coordonnees) / 1000)
         </h2>

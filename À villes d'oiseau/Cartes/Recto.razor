@@ -1,12 +1,11 @@
-﻿@using A_villes_d_oiseau.Villes
-
-<div class="carte">
+﻿<div class="carte">
     <div class="image-fond">
         <a href="@ville.LienWikipedia">
-            <img src="@ville.Image" />
+            <Image image=@ville.Image />
         </a>
     </div>
     <div class="libelle fond-blanc">
+        <Filigrane nomVille=@villeDepart.Nom />
         <h2 class="nom">@ville.Nom</h2>
     </div>
 </div>
@@ -14,4 +13,7 @@
 @code {
     [Parameter]
     public Ville ville { get; set; } = default!;
+
+    [Parameter]
+    public Ville villeDepart { get; set; } = default!;
 }

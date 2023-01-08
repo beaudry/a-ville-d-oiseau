@@ -1,0 +1,30 @@
+﻿<div class="filigrane">
+    @GenererFiligrane()
+</div>
+
+@code {
+    const int nombreRepetitions = 20;
+    static string formatFiligrane = new StringBuilder()
+        .Insert(0, "À villes d'oiseau édition {0} ", nombreRepetitions)
+        .Replace(' ', ' ')
+        .ToString();
+    static string villeEnMemoire = default!;
+    static string filigraneEnMemoire = default!;
+
+    [Parameter]
+    public string nomVille { get; set; } = default!;
+
+    string GenererFiligrane()
+    {
+        if (villeEnMemoire == nomVille)
+        {
+            return filigraneEnMemoire;
+        }
+
+        villeEnMemoire = nomVille;
+
+        filigraneEnMemoire = string.Format(formatFiligrane, nomVille.Replace(' ', ' '));
+
+        return filigraneEnMemoire;
+    }
+}

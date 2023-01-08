@@ -1,0 +1,9 @@
+﻿<img src="@image.Chemin" style="margin-left: @MarginLeft; margin-top: @MarginTop;" />
+
+@code {
+    [Parameter]
+    public A_villes_d_oiseau.Villes.Image image { get; set; } = default!;
+    
+    string MarginLeft => image.DecalageHorizontal + "px";
+    string MarginTop => image.DecalageVertical + "px";
+}
