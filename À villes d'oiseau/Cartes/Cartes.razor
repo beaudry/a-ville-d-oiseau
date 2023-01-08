@@ -105,6 +105,8 @@ else
     {
         villes = await VilleService.ChargerVilles();
         villeDepart = villes[0];
+
+        FiligraneService.DefinirVilles(villes.Select(villes => villes.Nom));
     }
 
     IEnumerable<Ville> GetVillesTriees()

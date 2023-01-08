@@ -1,28 +1,10 @@
-﻿<div class="filigrane">
-    @filigraneEnMemoire
+﻿@inject FiligraneService filigraneService
+
+<div class="filigrane">
+    @filigraneService.GenererFiligrane(nomVille)
 </div>
 
 @code {
-    const int nombreRepetitions = 20;
-    static string formatFiligrane = new StringBuilder()
-        .Insert(0, "À villes d'oiseau édition {0} ", nombreRepetitions)
-        .Replace(' ', ' ')
-        .ToString();
-    string filigraneEnMemoire = default!;
-    CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
-
     [Parameter]
     public string nomVille { get; set; } = default!;
-
-    protected override async Task OnParametersSetAsync()
-    {
-        cancellationTokenSource.Cancel();
-        cancellationTokenSource.Dispose();
-
-        cancellationTokenSource = new CancellationTokenSource();
-
-        filigraneEnMemoire = await Task.Run(() => string.Format(formatFiligrane, nomVille.Replace(' ', ' ')));
-
-        await base.OnParametersSetAsync();
-    }
 }
