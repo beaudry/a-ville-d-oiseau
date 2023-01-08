@@ -1,5 +1,5 @@
 ﻿<div class="filigrane">
-    @GenererFiligrane()
+    @filigraneEnMemoire
 </div>
 
 @code {
@@ -8,23 +8,21 @@
         .Insert(0, "À villes d'oiseau édition {0} ", nombreRepetitions)
         .Replace(' ', ' ')
         .ToString();
-    static string villeEnMemoire = default!;
-    static string filigraneEnMemoire = default!;
+    string filigraneEnMemoire = default!;
+    CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
 
     [Parameter]
     public string nomVille { get; set; } = default!;
 
-    string GenererFiligrane()
+    protected override async Task OnParametersSetAsync()
     {
-        if (villeEnMemoire == nomVille)
-        {
-            return filigraneEnMemoire;
-        }
+        cancellationTokenSource.Cancel();
+        cancellationTokenSource.Dispose();
 
-        villeEnMemoire = nomVille;
+        cancellationTokenSource = new CancellationTokenSource();
 
-        filigraneEnMemoire = string.Format(formatFiligrane, nomVille.Replace(' ', ' '));
+        filigraneEnMemoire = await Task.Run(() => string.Format(formatFiligrane, nomVille.Replace(' ', ' ')));
 
-        return filigraneEnMemoire;
+        await base.OnParametersSetAsync();
     }
 }
