@@ -31,6 +31,25 @@
         content: "An error has occurred."
     }
 
+h1, .h1 {
+    font-size: 2.5rem;
+}
+h2, .h2 {
+    font-size: 2rem;
+}
+
+h3, .h3 {
+    font-size: 1.75rem;
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
 h2, h3, h4 {
     margin: 0;
     padding: 0;
@@ -99,18 +118,30 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1em;
+    overflow: hidden;
 }
 
 .fond-blanc {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     background-color: rgba(255,255,255,0.87);
+    padding: 0 1em;
+}
+
+.filigrane {
+    position: absolute;
+    top: 40px;
+    left: -60px;
+    font-weight: bold;
+    word-break: break-all;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    color: rgba(0,0,0,0.13);
+    width: 350px;
+    line-height: 1.25;
 }
 
 @media print {
