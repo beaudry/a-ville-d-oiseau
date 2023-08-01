@@ -5,12 +5,18 @@
         </a>
     </div>
     <div class="libelle fond-blanc">
-        <Filigrane nomVille=@villeDepart.Nom />
+        @if (filigrane)
+        {
+            <Filigrane nomVille=@villeDepart.Nom />
+        }
         <h2 class="nom">@ville.Nom</h2>
     </div>
 </div>
 
 @code {
+    [Parameter]
+    public bool filigrane { get; set; }
+
     [Parameter]
     public Ville ville { get; set; } = default!;
 

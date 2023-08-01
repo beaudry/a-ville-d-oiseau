@@ -7,7 +7,10 @@
         </a>
     </div>
     <div class="libelle fond-blanc">
-        <Filigrane nomVille=@villeDepart.Nom />
+        @if (filigrane)
+        {
+            <Filigrane nomVille=@villeDepart.Nom />
+        }
         <h2 class="distance">
             @string.Format("{0:#,##0} km", ville.Coordonnees.GetDistanceTo(villeDepart.Coordonnees) / 1000)
         </h2>
@@ -17,6 +20,9 @@
 
 
 @code {
+    [Parameter]
+    public bool filigrane { get; set; }
+
     [Parameter]
     public Ville ville { get; set; } = default!;
 

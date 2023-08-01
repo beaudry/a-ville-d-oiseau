@@ -34,10 +34,10 @@ else
             
         <fieldset class="champ">
             <legend>Mode visuel</legend>
-            <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
             <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
+            <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
         </fieldset>
-
+        
         @if (modeVisuel == ModeVisuel.Impression)
         {
             <label class="champ">
@@ -45,6 +45,8 @@ else
                 <input type="number" @bind="nombreCartesParFeuille" min="1" max="@villes.Length" />
             </label>
         }
+
+        <label class="champ"><input type="checkbox" @onchange="ToggleFiligrane" checked="@afficherFiligrane" /> Afficher le filigrane</label>
     </div>
 
 
@@ -55,14 +57,14 @@ else
             <div class="cartes">
                 @foreach (var ville in page)
                 {
-                    <Recto ville="@ville" villeDepart="@villeDepart" />
+                    <Recto filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
                 }
             </div>
 
             <div class="cartes verso">
                 @foreach (var ville in page)
                 {
-                    <Verso ville="@ville" villeDepart="@villeDepart" />
+                    <Verso filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
                 }
             </div>
         }
@@ -73,8 +75,8 @@ else
         <div class="cartes debogage">
             @foreach (var ville in GetVillesTriees())
             {
-                <Recto ville="@ville" villeDepart="@villeDepart" />
-                <Verso ville="@ville" villeDepart="@villeDepart" />
+                <Recto filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
+                <Verso filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
             }
         </div>
     }
@@ -94,6 +96,7 @@ else
         Alphabetique
     }
 
+    private bool afficherFiligrane = false;
     private ModeVisuel modeVisuel = ModeVisuel.Debogage;
     private Tri tri = Tri.Defaut;
     private bool triInverse = false;
@@ -119,7 +122,7 @@ else
                 villesTriees = villesTriees.OrderBy(ville => ville.Nom);
                 break;
             case Tri.Distance:
-                villesTriees = villesTriees.OrderBy(ville => ville.Coordonnees.GetDistanceTo(villeDepart.Coordonnees));
+                villesTriees = villesTriees.OrderBy(ville => ville.Coordonnees.GetDistanceTo(villeDepart!.Coordonnees));
                 break;
         }
 
@@ -130,7 +133,6 @@ else
 
         return villesTriees;
     }
-
 
     Ville[][] GetVillesPaginees()
     {
@@ -143,12 +145,17 @@ else
 
     void ChangerVilleDepart(ChangeEventArgs evenement)
     {
-        villeDepart = villes.First(ville => ville.Nom.Equals(evenement.Value));
+        villeDepart = villes!.First(ville => ville.Nom.Equals(evenement.Value));
     }
-    
+
     void ChangerVisuel(ChangeEventArgs evenement)
     {
         modeVisuel = Enum.Parse<ModeVisuel>((string)evenement.Value!);
+    }
+
+    void ToggleFiligrane(ChangeEventArgs evenement)
+    {
+        afficherFiligrane = !afficherFiligrane;
     }
 
     void ChangerTri(ChangeEventArgs evenement)
