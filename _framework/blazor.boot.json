@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "A_villes_d_oiseau.dll": "sha256-RZ9h0kA77KLNKdGE2uQ2GLz8yUTYqkpN+w2VAnmrQu0=",
+      "A_villes_d_oiseau.dll": "sha256-D6eN5wJYgU\/rYHDRVCoexE1Pt9BUglq6unh3clHQzKw=",
       "GeoCoordinate.NetCore.dll": "sha256-qcxhjDeQcCRmicwuofcjsDgkc8d6\/4k9UOW1Mi1mgg4=",
       "Microsoft.AspNetCore.Components.dll": "sha256-+KwLdBMK381It0Z0VEmbfnXcMgANEY83QbpNILQxPQ4=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-dGE6E8lp4OgSRD8HxpnhQtwrKe1jYbi6HN9vQz2evQ0=",
