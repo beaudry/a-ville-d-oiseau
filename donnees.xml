@@ -291,8 +291,8 @@
 	<Ville>
 		<Nom>Sherbrooke</Nom>
 		<Image>
-			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_Sherbrooke.svg/800px-Flag_of_Sherbrooke.svg.png</Chemin>
-			<DecalageHorizontal>0</DecalageHorizontal>
+			<Chemin>https://www.guidesulysse.com/images/destinations/iStock-895674312.jpg</Chemin>
+			<DecalageHorizontal>-30</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
 		<Coordonnees>
@@ -309,7 +309,7 @@
 	<Ville>
 		<Nom>Montréal</Nom>
 		<Image>
-			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Montreal.svg/800px-Flag_of_Montreal.svg.png</Chemin>
+			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/17-08-islcanus-RalfR-DSC_3883.jpg/480px-17-08-islcanus-RalfR-DSC_3883.jpg</Chemin>
 			<DecalageHorizontal>0</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
@@ -471,7 +471,7 @@
 	<Ville>
 		<Nom>Trois-Rivières</Nom>
 		<Image>
-			<Chemin>https://upload.wikimedia.org/wikipedia/commons/d/da/Trois-Rivieres_Montage.jpg</Chemin>
+			<Chemin>https://content.r9cdn.net/rimg/dimg/51/31/74c40811-city-51547-17105d93f01.jpg?crop=true&amp;width=1000&amp;height=400&amp;xhint=2255&amp;yhint=3200</Chemin>
 			<DecalageHorizontal>0</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
