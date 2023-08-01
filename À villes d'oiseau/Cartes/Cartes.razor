@@ -216,7 +216,11 @@ else
     protected override async Task OnInitializedAsync()
     {
         var villes = await VilleService.ChargerVilles();
-        NomVilleDepart = villes[0].Nom;
+
+        if (NomVilleDepart == default)
+        {
+            NomVilleDepart = villes[0].Nom;
+        }
 
         villesParNom = villes.ToDictionary(ville => ville.Nom);
 
