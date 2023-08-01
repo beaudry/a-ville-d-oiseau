@@ -23,7 +23,7 @@ else
         <div class="champ">
             <label>
                 Trier par:
-                <select @onchange="ChangerTri">
+                <select @bind="Tri">
                     <option value="@MethodeDeTri.Defaut">Défaut</option>
                     <option value="@MethodeDeTri.Distance">Distance</option>
                     <option value="@MethodeDeTri.Alphabetique">Nom</option>
