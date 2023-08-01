@@ -1,8 +1,9 @@
 ﻿@page "/"
 
 @inject VilleService VilleService
+@inject NavigationManager Navigation
 
-@if (villes == null || villeDepart == null)
+@if (villesParNom.Count == 0 || VilleDepart == null)
 {
     <p>Chargement...</p>
 }
@@ -11,10 +12,10 @@ else
     <div class="noprint" >
         <label class="champ">
             Point de départ:
-            <select @onchange="ChangerVilleDepart">
-                @foreach (var ville in villes.OrderBy(ville => ville.Nom))
+            <select @bind="NomVilleDepart">
+                @foreach (var ville in villesParNom.Values.OrderBy(ville => ville.Nom))
                 {
-                    <option selected="@villeDepart.Equals(ville)" value="@ville.Nom">@ville.Nom</option>
+                    <option value="@ville.Nom">@ville.Nom</option>
                 }
             </select>
         </label>
@@ -23,48 +24,48 @@ else
             <label>
                 Trier par:
                 <select @onchange="ChangerTri">
-                    <option value="@Tri.Defaut">Défaut</option>
-                    <option value="@Tri.Distance">Distance</option>
-                    <option value="@Tri.Alphabetique">Nom</option>
+                    <option value="@MethodeDeTri.Defaut">Défaut</option>
+                    <option value="@MethodeDeTri.Distance">Distance</option>
+                    <option value="@MethodeDeTri.Alphabetique">Nom</option>
                 </select>
             </label>
                 
-            <label><input type="checkbox" @bind="triInverse" /> Inverser</label>
+            <label><input type="checkbox" @bind="TriInverse" /> Inverser</label>
         </div>
             
         <fieldset class="champ">
             <legend>Mode visuel</legend>
-            <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
-            <div><label><input type="radio" @onchange="ChangerVisuel" checked="@modeVisuel.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
+            <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@Mode.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
+            <div><label><input type="radio" @onchange="ChangerVisuel" checked="@Mode.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
         </fieldset>
         
-        @if (modeVisuel == ModeVisuel.Impression)
+        @if (Mode == ModeVisuel.Impression)
         {
             <label class="champ">
                 Cartes par feuille:
-                <input type="number" @bind="nombreCartesParFeuille" min="1" max="@villes.Length" />
+                <input type="number" @bind="nombreCartesParFeuille" min="1" max="@villesParNom.Count" />
             </label>
         }
 
-        <label class="champ"><input type="checkbox" @onchange="ToggleFiligrane" checked="@afficherFiligrane" /> Afficher le filigrane</label>
+        <div class="champ"><label><input type="checkbox" @bind="AfficherFiligrane"/> Afficher le filigrane</label></div>
     </div>
 
 
-    @if (modeVisuel == ModeVisuel.Impression)
+    @if (Mode == ModeVisuel.Impression)
     {
         @foreach (var page in GetVillesPaginees())
         {
             <div class="cartes">
                 @foreach (var ville in page)
                 {
-                    <Recto filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
+                    <Recto filigrane="@AfficherFiligrane" ville="@ville" villeDepart="@VilleDepart" />
                 }
             </div>
 
             <div class="cartes verso">
                 @foreach (var ville in page)
                 {
-                    <Verso filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
+                    <Verso filigrane="@AfficherFiligrane" ville="@ville" villeDepart="@VilleDepart" />
                 }
             </div>
         }
@@ -75,58 +76,168 @@ else
         <div class="cartes debogage">
             @foreach (var ville in GetVillesTriees())
             {
-                <Recto filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
-                <Verso filigrane="@afficherFiligrane" ville="@ville" villeDepart="@villeDepart" />
+                <Recto filigrane="@AfficherFiligrane" ville="@ville" villeDepart="@VilleDepart" />
+                <Verso filigrane="@AfficherFiligrane" ville="@ville" villeDepart="@VilleDepart" />
             }
         </div>
     }
 }
 
 @code {
-    enum ModeVisuel
+    public enum ModeVisuel
     {
         Debogage,
         Impression
     }
 
-    enum Tri
+    public enum MethodeDeTri
     {
         Defaut,
         Distance,
         Alphabetique
     }
 
-    private bool afficherFiligrane = false;
-    private ModeVisuel modeVisuel = ModeVisuel.Debogage;
-    private Tri tri = Tri.Defaut;
-    private bool triInverse = false;
-    private Ville[]? villes;
-    private Ville? villeDepart;
+    private const string nomUrlFiligrane = "filigrane";
+    private const string nomUrlModeVisuel = "mode";
+    private const string nomUrlTri = "tri";
+    private const string nomUrlTriInverse = "inverser";
+    private const string nomUrlVilleDepart = "depart";
+
+    private bool afficherFiligrane;
+    private ModeVisuel modeVisuel;
+    private MethodeDeTri tri;
+    private bool triInverse;
+    private string nomVilleDepart = default!;
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = nomUrlFiligrane)]
+    public bool AfficherFiligrane
+    {
+        get => afficherFiligrane;
+        set
+        {
+            if (afficherFiligrane != value)
+            {
+                afficherFiligrane = value;
+                Navigation.NavigateTo(Navigation.GetUriWithQueryParameter(nomUrlFiligrane, value));
+            }
+        }
+    }
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = nomUrlModeVisuel)]
+    public string ModeEnChaine
+    {
+        set
+        {
+            Enum.TryParse<ModeVisuel>(value, out ModeVisuel resultat);
+
+            modeVisuel = resultat;
+        }
+    }
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = nomUrlTri)]
+    public string TriEnChaine
+    {
+        set
+        {
+            Enum.TryParse<MethodeDeTri>(value, out MethodeDeTri resultat);
+
+            tri = resultat;
+        }
+    }
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = nomUrlTriInverse)]
+    public bool TriInverse
+    {
+        get => triInverse;
+        set
+        {
+            if (triInverse != value)
+            {
+                triInverse = value;
+
+                Navigation.NavigateTo(Navigation.GetUriWithQueryParameter(nomUrlTriInverse, value));
+            }
+        }
+    }
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = nomUrlVilleDepart)]
+    public string NomVilleDepart
+    {
+        get => nomVilleDepart;
+        set
+        {
+            if (nomVilleDepart != value)
+            {
+                nomVilleDepart = value;
+
+                Navigation.NavigateTo(Navigation.GetUriWithQueryParameter(nomUrlVilleDepart, value));
+            }
+        }
+    }
+
+    public ModeVisuel Mode
+    {
+        get => modeVisuel;
+        set
+        {
+            if (modeVisuel != value)
+            {
+                modeVisuel = value;
+
+                Navigation.NavigateTo(Navigation.GetUriWithQueryParameter(nomUrlModeVisuel, value.ToString()));
+            }
+        }
+    }
+
+    public MethodeDeTri Tri
+    {
+        get => tri;
+        set
+        {
+            if (tri != value)
+            {
+                tri = value;
+
+                Navigation.NavigateTo(Navigation.GetUriWithQueryParameter(nomUrlTri, value.ToString()));
+            }
+        }
+    }
+
+    public Ville VilleDepart => villesParNom[NomVilleDepart];
+
+    private Dictionary<string, Ville> villesParNom = new Dictionary<string, Ville>();
     private int nombreCartesParFeuille = 9;
 
     protected override async Task OnInitializedAsync()
     {
-        villes = await VilleService.ChargerVilles();
-        villeDepart = villes[0];
+        var villes = await VilleService.ChargerVilles();
+        NomVilleDepart = villes[0].Nom;
+
+        villesParNom = villes.ToDictionary(ville => ville.Nom);
 
         FiligraneService.DefinirVilles(villes.Select(villes => villes.Nom));
     }
 
     IEnumerable<Ville> GetVillesTriees()
     {
-        IEnumerable<Ville> villesTriees = villes!;
+        IEnumerable<Ville> villesTriees = villesParNom.Values;
 
-        switch (tri)
+        switch (Tri)
         {
-            case Tri.Alphabetique:
+            case MethodeDeTri.Alphabetique:
                 villesTriees = villesTriees.OrderBy(ville => ville.Nom);
                 break;
-            case Tri.Distance:
-                villesTriees = villesTriees.OrderBy(ville => ville.Coordonnees.GetDistanceTo(villeDepart!.Coordonnees));
+            case MethodeDeTri.Distance:
+                villesTriees = villesTriees.OrderBy(ville => ville.Coordonnees.GetDistanceTo(VilleDepart.Coordonnees));
                 break;
         }
 
-        if (triInverse)
+        if (TriInverse)
         {
             villesTriees = villesTriees.Reverse();
         }
@@ -143,23 +254,13 @@ else
             .ToArray();
     }
 
-    void ChangerVilleDepart(ChangeEventArgs evenement)
-    {
-        villeDepart = villes!.First(ville => ville.Nom.Equals(evenement.Value));
-    }
-
     void ChangerVisuel(ChangeEventArgs evenement)
     {
-        modeVisuel = Enum.Parse<ModeVisuel>((string)evenement.Value!);
-    }
-
-    void ToggleFiligrane(ChangeEventArgs evenement)
-    {
-        afficherFiligrane = !afficherFiligrane;
+        Mode = Enum.Parse<ModeVisuel>((string)evenement.Value!);
     }
 
     void ChangerTri(ChangeEventArgs evenement)
     {
-        tri = Enum.Parse<Tri>((string)evenement.Value!);
+        Tri = Enum.Parse<MethodeDeTri>((string)evenement.Value!);
     }
 }
