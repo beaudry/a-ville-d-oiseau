@@ -522,7 +522,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Lac-Delage",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lac_Delage14.JPG/800px-Lac_Delage14.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lac_Delage14.JPG/640px-Lac_Delage14.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -536,7 +536,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "La Tuque",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/La_Tuque_centre-ville.jpg/800px-La_Tuque_centre-ville.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Via_Rail_La_Tuque.jpg/640px-Via_Rail_La_Tuque.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -550,7 +550,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Sainte-Anne-de-Beaupré",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/545_-_Beaupre_QC.JPG/800px-545_-_Beaupre_QC.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Scala_Santa%2C_Sainte-Anne%2C_Qu%C3%A9bec.jpg/640px-Scala_Santa%2C_Sainte-Anne%2C_Qu%C3%A9bec.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -564,7 +564,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Gatineau",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gatineau_-_QC_-_Museum_of_Civilisation3.jpg/800px-Gatineau_-_QC_-_Museum_of_Civilisation3.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Gatineau_%28view_from_the_Peace_Tower_of_Parliament_Centre_Block%29.JPG/640px-Gatineau_%28view_from_the_Peace_Tower_of_Parliament_Centre_Block%29.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -578,7 +578,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Baie-Saint-Paul",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Baie-St-Paul.JPG/800px-Baie-St-Paul.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Baie-St-Paul.JPG/640px-Baie-St-Paul.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -592,7 +592,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "La Pocatière",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/La_Pocati%C3%A8re%2C_Qu%C3%A9bec.jpg/800px-La_Pocati%C3%A8re%2C_Qu%C3%A9bec.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/C%C3%A9gep_de_La_Pocati%C3%A8re.jpg/640px-C%C3%A9gep_de_La_Pocati%C3%A8re.jpg",
+                    Position = "left",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -606,7 +607,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Pohénégamook",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Lac-pohenegamook2.jpg/800px-Lac-pohenegamook2.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Lac-pohenegamook2.jpg/640px-Lac-pohenegamook2.jpg",
+                    Position = "left",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -620,7 +622,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Saguenay",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Ville_saguenay_montage.jpg/800px-Ville_saguenay_montage.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Pyramide_des_Ha%21_Ha%21.jpg/640px-Pyramide_des_Ha%21_Ha%21.jpg",
+                    Position = "right",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -634,7 +637,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Saint-Félicien",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Eglise_Saint-F%C3%A9licien.jpg/800px-Eglise_Saint-F%C3%A9licien.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Eglise_Saint-F%C3%A9licien.jpg/360px-Eglise_Saint-F%C3%A9licien.jpg",
+                    Position = "bottom",
                 },
                 Coordonnees = new GeoCoordinate
                 {

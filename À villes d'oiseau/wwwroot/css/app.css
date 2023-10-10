@@ -125,6 +125,12 @@ meter {
     overflow: hidden;
 }
 
+.image-fond a {
+    display: inherit;
+    flex: inherit;
+    justify-content: inherit;
+}
+
     .image-fond img {
         object-fit: cover;
         opacity: 1;
