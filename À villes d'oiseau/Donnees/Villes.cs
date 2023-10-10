@@ -779,7 +779,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Lebel-sur-Quévillon",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lebel_sur_Quevillon_QC.JPG/800px-Lebel_sur_Quevillon_QC.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lebel_sur_Quevillon_QC.JPG/640px-Lebel_sur_Quevillon_QC.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -793,7 +793,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Amqui",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/J.-Napoleon-Perusse.jpg/800px-J.-Napoleon-Perusse.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/J.-Napoleon-Perusse.jpg/640px-J.-Napoleon-Perusse.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -807,7 +807,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Causapscal",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Causapscal.jpg/800px-Causapscal.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pavillon_principal_Matamajaw.jpg/640px-Pavillon_principal_Matamajaw.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -821,7 +821,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Baie-Comeau",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Commerce_boulevard_Lasalle%2C_Baie-Comeau.JPG/800px-Commerce_boulevard_Lasalle%2C_Baie-Comeau.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Commerce_boulevard_Lasalle%2C_Baie-Comeau.JPG/640px-Commerce_boulevard_Lasalle%2C_Baie-Comeau.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -849,7 +849,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Rouyn-Noranda",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Poisson-Volant-2021-07-23.jpg/800px-Poisson-Volant-2021-07-23.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Poisson-Volant-2021-07-23.jpg/640px-Poisson-Volant-2021-07-23.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -863,7 +863,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Duparquet",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Duparquet_QC.JPG/800px-Duparquet_QC.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Duparquet_QC.JPG/640px-Duparquet_QC.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -877,7 +877,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Macamic",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Macamic_QC_1.JPG/800px-Macamic_QC_1.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Macamic_QC_2.JPG/640px-Macamic_QC_2.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -891,7 +891,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Matagami",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Matagamitown.jpg/800px-Matagamitown.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Matagamitown.jpg/640px-Matagamitown.jpg",
+                    Position = "left",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -905,7 +906,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Cap-Chat",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/2/2e/Capchat.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Phare_de_Cap-Chat.jpg/640px-Phare_de_Cap-Chat.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -919,7 +920,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Bonaventure",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Bonaventure1.jpg/800px-Bonaventure1.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Bonaventure1.jpg/640px-Bonaventure1.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -933,7 +934,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Murdochville",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Murdochville.jpg/800px-Murdochville.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Murdochville.jpg/640px-Murdochville.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -947,7 +948,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Chandler",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ville_de_Chandler.jpg/800px-Ville_de_Chandler.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ville_de_Chandler.jpg/622px-Ville_de_Chandler.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -961,7 +962,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Sept-Îles",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sept-%C3%8Eles.jpg/800px-Sept-%C3%8Eles.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sept-%C3%8Eles.jpg/640px-Sept-%C3%8Eles.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -975,7 +976,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Gaspé",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/a/ae/Gasp%C3%A9_Centre-ville_Nord.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gasp%C3%A9_-_Rue_de_la_Reine_%282%29.jpg/640px-Gasp%C3%A9_-_Rue_de_la_Reine_%282%29.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -989,7 +990,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Percé",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/d/d6/Perceville.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Perc%C3%A9_Rock.jpg/640px-Perc%C3%A9_Rock.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -1003,7 +1004,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Fermont",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fermont.JPG/800px-Fermont.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fermont.JPG/640px-Fermont.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -1017,7 +1018,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Schefferville",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Schefferville_Pierre_Bouchard.JPG/800px-Schefferville_Pierre_Bouchard.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Schefferville_Pierre_Bouchard.JPG/640px-Schefferville_Pierre_Bouchard.JPG",
+                    Position = "left",
                 },
                 Coordonnees = new GeoCoordinate
                 {
