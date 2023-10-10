@@ -652,7 +652,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Normandin",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Rue_Saint-Cyrille_Ouest.jpg/800px-Rue_Saint-Cyrille_Ouest.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Rue_Saint-Cyrille_Ouest.jpg/640px-Rue_Saint-Cyrille_Ouest.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -666,7 +666,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Dégelis",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/D%C3%A9gelis.jpg/800px-D%C3%A9gelis.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/H%C3%B4tel_de_ville_de_D%C3%A9gelis.JPG/640px-H%C3%B4tel_de_ville_de_D%C3%A9gelis.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -680,7 +680,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Rimouski",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Rimouski_Montage.jpg/800px-Rimouski_Montage.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Facade_uqar.jpg/360px-Facade_uqar.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -694,7 +694,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Val-d'Or",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ville_de_Val-d%27or.jpg/800px-Ville_de_Val-d%27or.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ville_de_Val-d%27or.jpg/640px-Ville_de_Val-d%27or.jpg",
+                    Position = "right",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -708,7 +709,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Belleterre",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Belleterre_2004.JPG/800px-Belleterre_2004.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Belleterre_QC.JPG/640px-Belleterre_QC.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -722,7 +723,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Métis-sur-Mer",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Metis-Lighthouse_2009.jpg/800px-Metis-Lighthouse_2009.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Metis-Lighthouse_2009.jpg/640px-Metis-Lighthouse_2009.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -750,7 +751,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Témiscaming",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/b/b6/Carte_Abitibi-T%C3%A9miscamingue.png",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ville_de_T%C3%A9miscaming.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -764,7 +765,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Chibougamau",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chibougamau2.jpg/800px-Chibougamau2.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chibougamau2.jpg/640px-Chibougamau2.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
