@@ -1,0 +1,18 @@
+﻿<div class="distribution-conteneur">
+    <meter max="20" value="@Distances.Count(distance => distance >= 0 && distance < 50_000)" />
+    <meter max="20" value="@Distances.Count(distance => distance >= 50_000 && distance < 100_000)" />
+    <meter max="20" value="@Distances.Count(distance => distance >= 100_000 && distance < 150_000)" />
+    <meter max="20" value="@Distances.Count(distance => distance >= 150_000 && distance < 200_000)" />
+    <meter max="20" value="@Distances.Count(distance => distance >= 200_000 && distance < 250_000)" />
+</div>
+
+@code {
+    private const int nombreDeBarres = 5;
+
+    [Parameter]
+    public IEnumerable<double> Distances { get; set; } = Array.Empty<double>();
+
+    private double DistanceMinimum => Distances.Min();
+    private double DistanceMaximum => Distances.Max();
+    private double DistanceEntreLesBarres => (DistanceMaximum - DistanceMinimum) / nombreDeBarres;
+}

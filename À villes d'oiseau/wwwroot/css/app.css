@@ -64,6 +64,24 @@ footer {
     margin-bottom: -2em;
 }
 
+#entete {
+    display: flex;
+}
+
+.panneau-controle {
+    flex: 1;
+}
+
+.distribution-conteneur {
+    flex: 2;
+}
+
+meter {
+    display: block;
+    height: 2em;
+    width: 100px;
+}
+
 .champ {
     display: block;
     margin-bottom: 1em;

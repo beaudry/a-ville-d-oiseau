@@ -8,47 +8,48 @@
 }
 else
 {
-    <div class="noprint" >
-        <label class="champ">
-            Point de départ:
-            <select @bind="NomVilleDepart">
-                @foreach (var ville in villesParNom.Values.OrderBy(ville => ville.Nom))
-                {
-                    <option value="@ville.Nom">@ville.Nom</option>
-                }
-            </select>
-        </label>
-            
-        <div class="champ">
-            <label>
-                Trier par:
-                <select @bind="Tri">
-                    <option value="@MethodeDeTri.Defaut">Défaut</option>
-                    <option value="@MethodeDeTri.Distance">Distance</option>
-                    <option value="@MethodeDeTri.Alphabetique">Nom</option>
+    <div class="noprint" id="entete">
+        <div class="panneau-controle">
+            <label class="champ">
+                Point de départ:
+                <select @bind="NomVilleDepart">
+                    @foreach (var ville in villesParNom.Values.OrderBy(ville => ville.Nom))
+                    {
+                        <option value="@ville.Nom">@ville.Nom</option>
+                    }
                 </select>
             </label>
-                
-            <label><input type="checkbox" @bind="TriInverse" /> Inverser</label>
-        </div>
             
-        <fieldset class="champ">
-            <legend>Mode visuel</legend>
-            <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@Mode.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
-            <div><label><input type="radio" @onchange="ChangerVisuel" checked="@Mode.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
-        </fieldset>
+            <div class="champ">
+                <label>
+                    Trier par:
+                    <select @bind="Tri">
+                        <option value="@MethodeDeTri.Defaut">Défaut</option>
+                        <option value="@MethodeDeTri.Distance">Distance</option>
+                        <option value="@MethodeDeTri.Alphabetique">Nom</option>
+                    </select>
+                </label>
+                
+                <label><input type="checkbox" @bind="TriInverse" /> Inverser</label>
+            </div>
+            
+            <fieldset class="champ">
+                <legend>Mode visuel</legend>
+                <div><label><input type="radio"  @onchange="ChangerVisuel" checked="@Mode.Equals(ModeVisuel.Debogage)" name="mode-visuel" value="@ModeVisuel.Debogage" /> Débogage</label></div>
+                <div><label><input type="radio" @onchange="ChangerVisuel" checked="@Mode.Equals(ModeVisuel.Impression)" name="mode-visuel" value="@ModeVisuel.Impression" /> Impression recto-verso</label></div>
+            </fieldset>
         
-        @if (Mode == ModeVisuel.Impression)
-        {
-            <label class="champ">
-                Cartes par feuille:
-                <input type="number" @bind="NombreCartesParFeuille" min="1" max="@villesParNom.Count" />
-            </label>
-        }
+            @if (Mode == ModeVisuel.Impression)
+            {
+                <label class="champ">
+                    Cartes par feuille:
+                    <input type="number" @bind="NombreCartesParFeuille" min="1" max="@villesParNom.Count" />
+                </label>
+            }
 
-        <div class="champ"><label><input type="checkbox" @bind="AfficherFiligrane"/> Afficher le filigrane</label></div>
+            <div class="champ"><label><input type="checkbox" @bind="AfficherFiligrane"/> Afficher le filigrane</label></div>
+        </div>
     </div>
-
 
     @if (Mode == ModeVisuel.Impression)
     {
