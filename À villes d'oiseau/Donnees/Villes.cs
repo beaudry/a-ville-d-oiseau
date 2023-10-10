@@ -407,7 +407,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Rigaud",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Rigaud_QC.JPG/800px-Rigaud_QC.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Rigaud_QC.JPG/640px-Rigaud_QC.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -421,7 +421,8 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Shawinigan",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ville_de_Shawinigan.JPG/800px-Ville_de_Shawinigan.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Shawinigan_aerial_2011.jpg/640px-Shawinigan_aerial_2011.jpg",
+                    Position = "left",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -435,7 +436,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Thetford Mines",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/1/13/Thetford3.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/8/8f/Thetford.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -449,7 +450,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Saint-Tite",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Eglise_st-tite.jpg/800px-Eglise_st-tite.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Eglise_st-tite.jpg/360px-Eglise_st-tite.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -507,7 +508,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Thurso",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Thurso_QC.jpg/800px-Thurso_QC.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Thurso_QC.jpg/640px-Thurso_QC.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
