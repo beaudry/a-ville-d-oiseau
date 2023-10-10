@@ -84,10 +84,11 @@ footer {
 }
 
 .carte {
-    width: 275px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     border: 1px solid black;
     display: flex;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -99,13 +100,9 @@ footer {
 }
 
 .image-fond {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
     .image-fond img {
@@ -116,18 +113,17 @@ footer {
 .libelle {
     height: 100px;
     width: 100%;
-    position: absolute;
-    bottom: 25px;
     overflow: hidden;
 }
 
 .fond-blanc {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: rgba(255,255,255,0.87);
+    background-color: rgba(255,255,255,1);
     padding: 0 1em;
 }
 
