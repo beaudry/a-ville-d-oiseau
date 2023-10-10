@@ -3,7 +3,6 @@
     public class Image
     {
         public string Chemin { get; set; } = default!;
-        public int DecalageHorizontal { get; set; }
-        public int DecalageVertical { get; set; }
+        public string? Position { get; set; }
     }
 }

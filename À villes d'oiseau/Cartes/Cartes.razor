@@ -1,6 +1,5 @@
 ﻿@page "/"
 
-@inject VilleService VilleService
 @inject NavigationManager Navigation
 
 @if (villesParNom.Count == 0 || VilleDepart == null)
@@ -233,18 +232,16 @@ else
 
     public Ville VilleDepart => villesParNom[NomVilleDepart];
 
-    private Dictionary<string, Ville> villesParNom = new Dictionary<string, Ville>();
+    private Dictionary<string, Ville> villesParNom => Donnees.Villes.ParNom;
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
-        var villes = await VilleService.ChargerVilles();
+        var villes = Donnees.Villes.Toutes;
 
         if (NomVilleDepart == default)
         {
             NomVilleDepart = villes[0].Nom;
         }
-
-        villesParNom = villes.ToDictionary(ville => ville.Nom);
 
         FiligraneService.DefinirVilles(villes.Select(villes => villes.Nom));
     }

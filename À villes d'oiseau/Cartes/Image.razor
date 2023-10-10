@@ -4,5 +4,5 @@
     [Parameter]
     public A_villes_d_oiseau.Villes.Image image { get; set; } = default!;
 
-    string Position => (image.DecalageHorizontal == 0 ? "left" : "right");
+    public string Position => image.Position ?? "initial";
 }

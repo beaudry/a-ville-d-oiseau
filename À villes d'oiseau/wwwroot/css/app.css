@@ -10,7 +10,7 @@
     left: 0;
     padding: 0.6rem 1.25rem 0.7rem 1.25rem;
     position: fixed;
-    width: 10q0%;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -71,6 +71,7 @@ footer {
 
 .cartes {
     display: flex;
+    gap: 0px;
     flex-wrap: wrap;
 }
 
@@ -93,8 +94,6 @@ footer {
     overflow: hidden;
     text-align: center;
     page-break-inside: avoid;
-    margin-inline: 2px;
-    margin-bottom: 1px;
 }
 
 .debogage .carte {
