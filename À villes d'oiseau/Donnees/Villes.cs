@@ -141,7 +141,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Chambly",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Eglise_Saint-Joseph-de-Chambly.jpg/800px-Eglise_Saint-Joseph-de-Chambly.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Eglise_Saint-Joseph-de-Chambly.jpg/640px-Eglise_Saint-Joseph-de-Chambly.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -155,7 +155,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Magog",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Magog-St-Patrick.jpg/800px-Magog-St-Patrick.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Magog-St-Patrick.jpg/640px-Magog-St-Patrick.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -169,7 +169,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Drummondville",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rue_Lindsay%2C_Drummondville.jpg/800px-Rue_Lindsay%2C_Drummondville.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rue_Lindsay%2C_Drummondville.jpg/640px-Rue_Lindsay%2C_Drummondville.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -183,7 +183,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Longueuil",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Longueuil_2011.jpg/800px-Longueuil_2011.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Longueuil_2011.jpg/640px-Longueuil_2011.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -197,7 +197,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Brossard",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Dix30.jpg/800px-Dix30.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Dix30.jpg/640px-Dix30.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -225,7 +225,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Saint-Ours",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Church_Saint-Ours_%28Qu%C3%A9bec%29.JPG/800px-Church_Saint-Ours_%28Qu%C3%A9bec%29.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Church_Saint-Ours_%28Qu%C3%A9bec%29.JPG/457px-Church_Saint-Ours_%28Qu%C3%A9bec%29.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -239,7 +239,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Sherbrooke",
                 Image = new Image
                 {
-                    Chemin = "https://www.guidesulysse.com/images/destinations/iStock-895674312.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Sherbrooke_Centreville2.JPG/640px-Sherbrooke_Centreville2.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -295,7 +295,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Coaticook",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/4/45/%C3%89difice_de_la_Vieille_poste%2C_Coaticook%2C_QC.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/%C3%89difice_de_la_Vieille_poste%2C_Coaticook%2C_QC.JPG/640px-%C3%89difice_de_la_Vieille_poste%2C_Coaticook%2C_QC.JPG",
                 },
                 Coordonnees = new GeoCoordinate
                 {
