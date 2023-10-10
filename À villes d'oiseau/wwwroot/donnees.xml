@@ -4,17 +4,12 @@
 		<Nom>Granby</Nom>
 		<Image>
 			<Chemin>https://upload.wikimedia.org/wikipedia/commons/2/27/Granby-Rue_Principale.jpg</Chemin>
-			<DecalageHorizontal>0</DecalageHorizontal>
+			<DecalageHorizontal>1</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
 		<Coordonnees>
 			<Latitude>45.39847624425485</Latitude>
 			<Longitude>-72.72224975237435</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Granby%20(Québec)</LienWikipedia>
 	</Ville>
@@ -28,11 +23,6 @@
 		<Coordonnees>
 			<Latitude>45.31910662283246</Latitude>
 			<Longitude>-72.64607641563734</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Bromont</LienWikipedia>
 	</Ville>
@@ -46,11 +36,6 @@
 		<Coordonnees>
 			<Latitude>45.344919858143285</Latitude>
 			<Longitude>-72.51561188741492</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Waterloo%20(Québec)</LienWikipedia>
 	</Ville>
@@ -64,11 +49,6 @@
 		<Coordonnees>
 			<Latitude>45.28380585313681</Latitude>
 			<Longitude>-72.97675915822353</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Farnham%20(Québec)</LienWikipedia>
 	</Ville>
@@ -82,11 +62,6 @@
 		<Coordonnees>
 			<Latitude>45.62604505076951</Latitude>
 			<Longitude>-72.94658701360687</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Saint-Hyacinthe</LienWikipedia>
 	</Ville>
@@ -100,11 +75,6 @@
 		<Coordonnees>
 			<Latitude>45.131222409209855</Latitude>
 			<Longitude>-72.80041848920442</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Dunham</LienWikipedia>
 	</Ville>
@@ -118,11 +88,6 @@
 		<Coordonnees>
 			<Latitude>45.10601276278098</Latitude>
 			<Longitude>-72.6157424878401</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Sutton%20(Québec)</LienWikipedia>
 	</Ville>
@@ -136,11 +101,6 @@
 		<Coordonnees>
 			<Latitude>45.120947639618954</Latitude>
 			<Longitude>-72.98767935844046</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Bedford%20(Québec)</LienWikipedia>
 	</Ville>
@@ -154,11 +114,6 @@
 		<Coordonnees>
 			<Latitude>45.30567820498343</Latitude>
 			<Longitude>-73.25399060618588</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Saint-Jean-sur-Richelieu</LienWikipedia>
 	</Ville>
@@ -172,11 +127,6 @@
 		<Coordonnees>
 			<Latitude>45.44904625949664</Latitude>
 			<Longitude>-73.29175743926578</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Chambly%20(Québec)</LienWikipedia>
 	</Ville>
@@ -190,11 +140,6 @@
 		<Coordonnees>
 			<Latitude>45.26498852149322</Latitude>
 			<Longitude>-72.14693675169549</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Magog</LienWikipedia>
 	</Ville>
@@ -208,11 +153,6 @@
 		<Coordonnees>
 			<Latitude>45.88051023734284</Latitude>
 			<Longitude>-72.4842957831213</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Drummondville</LienWikipedia>
 	</Ville>
@@ -226,11 +166,6 @@
 		<Coordonnees>
 			<Latitude>45.51372029403457</Latitude>
 			<Longitude>-73.43130598682187</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Longueuil</LienWikipedia>
 	</Ville>
@@ -244,11 +179,6 @@
 		<Coordonnees>
 			<Latitude>45.4553894259322</Latitude>
 			<Longitude>-73.46785152968737</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Brossard%20(ville)</LienWikipedia>
 	</Ville>
@@ -262,11 +192,6 @@
 		<Coordonnees>
 			<Latitude>45.394878757926314</Latitude>
 			<Longitude>-73.51914644281416</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Candiac</LienWikipedia>
 	</Ville>-->
@@ -280,11 +205,6 @@
 		<Coordonnees>
 			<Latitude>45.88947846811169</Latitude>
 			<Longitude>-73.15028251403199</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Saint-Ours_(Québec)</LienWikipedia>
 	</Ville>
@@ -298,11 +218,6 @@
 		<Coordonnees>
 			<Latitude>45.404166886248646</Latitude>
 			<Longitude>-71.89306107931212</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Sherbrooke</LienWikipedia>
 	</Ville>
@@ -316,11 +231,6 @@
 		<Coordonnees>
 			<Latitude>45.5089172186547</Latitude>
 			<Longitude>-73.55433346786855</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Montréal</LienWikipedia>
 	</Ville>
@@ -334,11 +244,6 @@
 		<Coordonnees>
 			<Latitude>46.04385167098284</Latitude>
 			<Longitude>-73.11328424155592</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Sorel-Tracy</LienWikipedia>
 	</Ville>
@@ -352,11 +257,6 @@
 		<Coordonnees>
 			<Latitude>45.74559652934551</Latitude>
 			<Longitude>-73.60169263455867</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Mascouche</LienWikipedia>
 	</Ville>
@@ -370,11 +270,6 @@
 		<Coordonnees>
 			<Latitude>45.1345114850343</Latitude>
 			<Longitude>-71.8047733467019</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Coaticook%20(ville)</LienWikipedia>
 	</Ville>
@@ -388,11 +283,6 @@
 		<Coordonnees>
 			<Latitude>45.360785128788855</Latitude>
 			<Longitude>-73.7500186798714</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Châteauguay</LienWikipedia>
 	</Ville>
@@ -406,11 +296,6 @@
 		<Coordonnees>
 			<Latitude>45.550512549791755</Latitude>
 			<Longitude>-73.74375358949996</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Laval%20(Québec)</LienWikipedia>
 	</Ville>
@@ -424,11 +309,6 @@
 		<Coordonnees>
 			<Latitude>45.94577100301525</Latitude>
 			<Longitude>-71.98933183323668</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Warwick%20(Québec)</LienWikipedia>
 	</Ville>
@@ -442,11 +322,6 @@
 		<Coordonnees>
 			<Latitude>46.226344047625545</Latitude>
 			<Longitude>-72.61628222625122</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Nicolet</LienWikipedia>
 	</Ville>
@@ -460,11 +335,6 @@
 		<Coordonnees>
 			<Latitude>46.055245161011804</Latitude>
 			<Longitude>-71.95997787109735</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Victoriaville</LienWikipedia>
 	</Ville>
@@ -478,11 +348,6 @@
 		<Coordonnees>
 			<Latitude>46.343149996763216</Latitude>
 			<Longitude>-72.5430145189136</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Trois-Rivières</LienWikipedia>
 	</Ville>
@@ -496,11 +361,6 @@
 		<Coordonnees>
 			<Latitude>46.218786727011064</Latitude>
 			<Longitude>-71.77178411063348</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Plessisville%20(ville)</LienWikipedia>
 	</Ville>
@@ -514,11 +374,6 @@
 		<Coordonnees>
 			<Latitude>45.479946656968416</Latitude>
 			<Longitude>-74.30074113135564</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Rigaud%20(Québec)</LienWikipedia>
 	</Ville>
@@ -532,11 +387,6 @@
 		<Coordonnees>
 			<Latitude>46.54107832436057</Latitude>
 			<Longitude>-72.74529519840176</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Shawinigan</LienWikipedia>
 	</Ville>
@@ -550,11 +400,6 @@
 		<Coordonnees>
 			<Latitude>46.088933754851645</Latitude>
 			<Longitude>-71.30199918375415</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Thetford%20Mines</LienWikipedia>
 	</Ville>
@@ -568,11 +413,6 @@
 		<Coordonnees>
 			<Latitude>46.72703535283568</Latitude>
 			<Longitude>-72.56466589518135</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Saint-Tite</LienWikipedia>
 	</Ville>
@@ -586,11 +426,6 @@
 		<Coordonnees>
 			<Latitude>46.6727266049768</Latitude>
 			<Longitude>-71.73714938562428</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Donnacona%20(Québec)</LienWikipedia>
 	</Ville>
@@ -604,11 +439,6 @@
 		<Coordonnees>
 			<Latitude>46.75817461162562</Latitude>
 			<Longitude>-71.24023578058276</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Lévis</LienWikipedia>
 	</Ville>
@@ -622,11 +452,6 @@
 		<Coordonnees>
 			<Latitude>46.813826022918036</Latitude>
 			<Longitude>-71.20797742213087</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Québec_(ville)</LienWikipedia>
 	</Ville>
@@ -640,11 +465,6 @@
 		<Coordonnees>
 			<Latitude>45.59950568647061</Latitude>
 			<Longitude>-75.24350781659477</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Thurso%20(Québec)</LienWikipedia>
 	</Ville>
@@ -658,11 +478,6 @@
 		<Coordonnees>
 			<Latitude>46.971086809807595</Latitude>
 			<Longitude>-71.40379420764418</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Lac-Delage</LienWikipedia>
 	</Ville>
@@ -676,11 +491,6 @@
 		<Coordonnees>
 			<Latitude>47.440888553637144</Latitude>
 			<Longitude>-72.7814617597049</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/La%20Tuque</LienWikipedia>
 	</Ville>
@@ -694,11 +504,6 @@
 		<Coordonnees>
 			<Latitude>47.01610552880398</Latitude>
 			<Longitude>-70.94770036817128</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Sainte-Anne-de-Beaupré</LienWikipedia>
 	</Ville>
@@ -712,11 +517,6 @@
 		<Coordonnees>
 			<Latitude>45.42805700431856</Latitude>
 			<Longitude>-75.71074174320961</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Gatineau</LienWikipedia>
 	</Ville>
@@ -730,11 +530,6 @@
 		<Coordonnees>
 			<Latitude>47.44065666617415</Latitude>
 			<Longitude>-70.50949193556421</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Baie-Saint-Paul</LienWikipedia>
 	</Ville>
@@ -748,11 +543,6 @@
 		<Coordonnees>
 			<Latitude>47.36977006199157</Latitude>
 			<Longitude>-70.03229557849131</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/La%20Pocatière</LienWikipedia>
 	</Ville>
@@ -766,11 +556,6 @@
 		<Coordonnees>
 			<Latitude>47.45703711655904</Latitude>
 			<Longitude>-69.2400837863807</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Pohénégamook</LienWikipedia>
 	</Ville>
@@ -784,11 +569,6 @@
 		<Coordonnees>
 			<Latitude>48.428245852458375</Latitude>
 			<Longitude>-71.06222039456715</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Saguenay%20(ville)</LienWikipedia>
 	</Ville>
@@ -802,11 +582,6 @@
 		<Coordonnees>
 			<Latitude>48.6528496079535</Latitude>
 			<Longitude>-72.44661684025479</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Saint-Félicien%20(Québec)</LienWikipedia>
 	</Ville>
@@ -820,11 +595,6 @@
 		<Coordonnees>
 			<Latitude>48.83585931423486</Latitude>
 			<Longitude>-72.52819617932087</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Normandin%20(Québec)</LienWikipedia>
 	</Ville>
@@ -838,11 +608,6 @@
 		<Coordonnees>
 			<Latitude>47.54789221971853</Latitude>
 			<Longitude>-68.64715024400076</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Dégelis</LienWikipedia>
 	</Ville>
@@ -856,11 +621,6 @@
 		<Coordonnees>
 			<Latitude>48.44920737927583</Latitude>
 			<Longitude>-68.52500214903917</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Rimouski</LienWikipedia>
 	</Ville>
@@ -874,11 +634,6 @@
 		<Coordonnees>
 			<Latitude>48.10204905278589</Latitude>
 			<Longitude>-77.78939313045444</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Val-d'Or</LienWikipedia>
 	</Ville>
@@ -892,11 +647,6 @@
 		<Coordonnees>
 			<Latitude>47.38926759401454</Latitude>
 			<Longitude>-78.70361127102093</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Belleterre</LienWikipedia>
 	</Ville>
@@ -910,11 +660,6 @@
 		<Coordonnees>
 			<Latitude>48.683741333050314</Latitude>
 			<Longitude>-67.96347665748331</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Métis-sur-Mer</LienWikipedia>
 	</Ville>
@@ -928,11 +673,6 @@
 		<Coordonnees>
 			<Latitude>49.781783212015206</Latitude>
 			<Longitude>-74.85347012232548</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Chapais%20(Québec)</LienWikipedia>
 	</Ville>
@@ -946,11 +686,6 @@
 		<Coordonnees>
 			<Latitude>46.72157897409265</Latitude>
 			<Longitude>-79.0931661946412</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Témiscaming</LienWikipedia>
 	</Ville>
@@ -964,11 +699,6 @@
 		<Coordonnees>
 			<Latitude>49.913301554033026</Latitude>
 			<Longitude>-74.3685515042512</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Chibougamau</LienWikipedia>
 	</Ville>
@@ -982,11 +712,6 @@
 		<Coordonnees>
 			<Latitude>49.05223150197099</Latitude>
 			<Longitude>-76.97595398890849</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Lebel-sur-Quévillon</LienWikipedia>
 	</Ville>
@@ -1000,11 +725,6 @@
 		<Coordonnees>
 			<Latitude>48.462561830578835</Latitude>
 			<Longitude>-67.43343697103043</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Amqui</LienWikipedia>
 	</Ville>
@@ -1018,11 +738,6 @@
 		<Coordonnees>
 			<Latitude>48.35478644106692</Latitude>
 			<Longitude>-67.22132864960157</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Causapscal</LienWikipedia>
 	</Ville>
@@ -1036,11 +751,6 @@
 		<Coordonnees>
 			<Latitude>49.22095984366846</Latitude>
 			<Longitude>-68.14927960179543</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Baie-Comeau</LienWikipedia>
 	</Ville>
@@ -1054,11 +764,6 @@
 		<Coordonnees>
 			<Latitude>48.84330943694312</Latitude>
 			<Longitude>-67.53025553197125</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Matane</LienWikipedia>
 	</Ville>
@@ -1072,11 +777,6 @@
 		<Coordonnees>
 			<Latitude>48.237334843391366</Latitude>
 			<Longitude>-79.01705051899856</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Rouyn-Noranda</LienWikipedia>
 	</Ville>
@@ -1090,11 +790,6 @@
 		<Coordonnees>
 			<Latitude>48.50552957289692</Latitude>
 			<Longitude>-79.22932001472097</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Duparquet%20(Québec)</LienWikipedia>
 	</Ville>
@@ -1108,11 +803,6 @@
 		<Coordonnees>
 			<Latitude>48.75529720820128</Latitude>
 			<Longitude>-79.00174061359594</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Macamic</LienWikipedia>
 	</Ville>
@@ -1126,11 +816,6 @@
 		<Coordonnees>
 			<Latitude>49.75837382893953</Latitude>
 			<Longitude>-77.62198018946032</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Matagami</LienWikipedia>
 	</Ville>
@@ -1144,11 +829,6 @@
 		<Coordonnees>
 			<Latitude>49.09653236418819</Latitude>
 			<Longitude>-66.68796574260537</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Cap-Chat</LienWikipedia>
 	</Ville>
@@ -1162,11 +842,6 @@
 		<Coordonnees>
 			<Latitude>48.049023517325914</Latitude>
 			<Longitude>-65.49096257412491</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Bonaventure%20(ville)</LienWikipedia>
 	</Ville>
@@ -1180,11 +855,6 @@
 		<Coordonnees>
 			<Latitude>48.96021470862818</Latitude>
 			<Longitude>-65.49581137989624</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Murdochville</LienWikipedia>
 	</Ville>
@@ -1198,11 +868,6 @@
 		<Coordonnees>
 			<Latitude>48.348581028235245</Latitude>
 			<Longitude>-64.67833325704737</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Chandler%20(Québec)</LienWikipedia>
 	</Ville>
@@ -1216,11 +881,6 @@
 		<Coordonnees>
 			<Latitude>50.209948958191234</Latitude>
 			<Longitude>-66.38538156999843</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Sept-Îles</LienWikipedia>
 	</Ville>
@@ -1234,11 +894,6 @@
 		<Coordonnees>
 			<Latitude>48.824793184217896</Latitude>
 			<Longitude>-64.47599166805504</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Gaspé%20(ville)</LienWikipedia>
 	</Ville>
@@ -1252,11 +907,6 @@
 		<Coordonnees>
 			<Latitude>48.52392244296376</Latitude>
 			<Longitude>-64.21084989012432</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Percé</LienWikipedia>
 	</Ville>
@@ -1270,11 +920,6 @@
 		<Coordonnees>
 			<Latitude>52.797616158698446</Latitude>
 			<Longitude>-67.09061884464177</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Fermont</LienWikipedia>
 	</Ville>
@@ -1288,11 +933,6 @@
 		<Coordonnees>
 			<Latitude>54.80047933844688</Latitude>
 			<Longitude>-66.8210367712869</Longitude>
-			<HorizontalAccuracy>NaN</HorizontalAccuracy>
-			<VerticalAccuracy>NaN</VerticalAccuracy>
-			<Speed>NaN</Speed>
-			<Course>NaN</Course>
-			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Schefferville</LienWikipedia>
 	</Ville>
