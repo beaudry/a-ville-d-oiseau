@@ -3,7 +3,7 @@
 	<Ville>
 		<Nom>Granby</Nom>
 		<Image>
-			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Rue_Principale%2C_Granby_%28Qu%C3%A9bec%29.jpg/800px-Rue_Principale%2C_Granby_%28Qu%C3%A9bec%29.jpg</Chemin>
+			<Chemin>https://upload.wikimedia.org/wikipedia/commons/2/27/Granby-Rue_Principale.jpg</Chemin>
 			<DecalageHorizontal>0</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
@@ -252,7 +252,7 @@
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Brossard%20(ville)</LienWikipedia>
 	</Ville>
-	<Ville>
+	<!--<Ville>
 		<Nom>Candiac</Nom>
 		<Image>
 			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Candiac_QC_1.JPG/800px-Candiac_QC_1.JPG</Chemin>
@@ -269,7 +269,7 @@
 			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Candiac</LienWikipedia>
-	</Ville>
+	</Ville>-->
 	<Ville>
 		<Nom>Saint-Ours</Nom>
 		<Image>
@@ -363,7 +363,7 @@
 	<Ville>
 		<Nom>Coaticook</Nom>
 		<Image>
-			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Coaticook_QC.JPG/800px-Coaticook_QC.JPG</Chemin>
+			<Chemin>https://upload.wikimedia.org/wikipedia/commons/4/45/%C3%89difice_de_la_Vieille_poste%2C_Coaticook%2C_QC.JPG</Chemin>
 			<DecalageHorizontal>0</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
@@ -399,7 +399,7 @@
 	<Ville>
 		<Nom>Laval</Nom>
 		<Image>
-			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Laval_Quebec_Montage.jpg/800px-Laval_Quebec_Montage.jpg</Chemin>
+			<Chemin>https://upload.wikimedia.org/wikipedia/commons/9/95/Eglise_Saint-Vincent-de-Paul_-_Laval_-_02.jpg</Chemin>
 			<DecalageHorizontal>0</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
@@ -597,7 +597,7 @@
 	<Ville>
 		<Nom>Lévis</Nom>
 		<Image>
-			<Chemin>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/L%C3%A9vis_Montage_2019.jpg/800px-L%C3%A9vis_Montage_2019.jpg</Chemin>
+			<Chemin>https://upload.wikimedia.org/wikipedia/commons/c/c6/L%C3%A9vis_%2843331478522%29.jpg</Chemin>
 			<DecalageHorizontal>0</DecalageHorizontal>
 			<DecalageVertical>0</DecalageVertical>
 		</Image>
@@ -1295,5 +1295,18 @@
 			<Altitude>NaN</Altitude>
 		</Coordonnees>
 		<LienWikipedia>https://fr.wikipedia.org/wiki/Schefferville</LienWikipedia>
+	</Ville>
+	<Ville>
+		<Nom>Sainte-Croix</Nom>
+		<Image>
+			<Chemin>https://upload.wikimedia.org/wikipedia/commons/2/22/Vue_a%C3%A9rienne_de_Sainte-Croix_QC_%281%29.jpg</Chemin>
+			<DecalageHorizontal>1</DecalageHorizontal>
+			<DecalageVertical>0</DecalageVertical>
+		</Image>
+		<Coordonnees>
+			<Latitude>46.62272038811359</Latitude>
+			<Longitude>-71.7395679168263</Longitude>
+		</Coordonnees>
+		<LienWikipedia>https://fr.wikipedia.org/wiki/Sainte-Croix_(Qu%C3%A9bec)</LienWikipedia>
 	</Ville>
 </ArrayOfVille>

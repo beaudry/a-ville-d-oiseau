@@ -10,7 +10,7 @@
     left: 0;
     padding: 0.6rem 1.25rem 0.7rem 1.25rem;
     position: fixed;
-    width: 100%;
+    width: 10q0%;
     z-index: 1000;
 }
 
@@ -84,7 +84,7 @@ footer {
 }
 
 .carte {
-    width: 250px;
+    width: 240px;
     height: 350px;
     border: 1px solid black;
     display: flex;
@@ -93,6 +93,8 @@ footer {
     overflow: hidden;
     text-align: center;
     page-break-inside: avoid;
+    margin-inline: 2px;
+    margin-bottom: 1px;
 }
 
 .debogage .carte {
@@ -101,13 +103,16 @@ footer {
 
 .image-fond {
     display: flex;
+    flex: 1;
     justify-content: center;
     overflow: hidden;
 }
 
     .image-fond img {
+        object-fit: cover;
         opacity: 1;
-        height: 100%;
+        width: 100%;
+        min-height: 100%;
     }
 
 .libelle {
