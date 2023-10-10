@@ -10,7 +10,7 @@
     left: 0;
     padding: 0.6rem 1.25rem 0.7rem 1.25rem;
     position: fixed;
-    width: 100%;
+    width: 10q0%;
     z-index: 1000;
 }
 
@@ -84,14 +84,17 @@ footer {
 }
 
 .carte {
-    width: 275px;
-    height: 400px;
+    width: 240px;
+    height: 350px;
     border: 1px solid black;
     display: flex;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     text-align: center;
     page-break-inside: avoid;
+    margin-inline: 2px;
+    margin-bottom: 1px;
 }
 
 .debogage .carte {
@@ -99,35 +102,33 @@ footer {
 }
 
 .image-fond {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
+    flex: 1;
     justify-content: center;
+    overflow: hidden;
 }
 
     .image-fond img {
+        object-fit: cover;
         opacity: 1;
-        height: 100%;
+        width: 100%;
+        min-height: 100%;
     }
 
 .libelle {
     height: 100px;
     width: 100%;
-    position: absolute;
-    bottom: 25px;
     overflow: hidden;
 }
 
 .fond-blanc {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: rgba(255,255,255,0.87);
+    background-color: rgba(255,255,255,1);
     padding: 0 1em;
 }
 
