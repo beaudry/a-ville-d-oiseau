@@ -267,7 +267,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Sorel-Tracy",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/6/6a/Soreltracy.png",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pont_Turcotte.jpg/640px-Pont_Turcotte.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -281,7 +281,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Mascouche",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Manoir_des_Le_Gardeur_de_Repentigny.jpg/800px-Manoir_des_Le_Gardeur_de_Repentigny.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Manoir_des_Le_Gardeur_de_Repentigny.jpg/640px-Manoir_des_Le_Gardeur_de_Repentigny.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -309,7 +309,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Châteauguay",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ch%C3%A2teauguay_-_vue_a%C3%A9rienne_20170816-05.jpg/800px-Ch%C3%A2teauguay_-_vue_a%C3%A9rienne_20170816-05.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/MairiedeCh%C3%A2teauguay.jpg/640px-MairiedeCh%C3%A2teauguay.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -323,7 +323,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Laval",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/9/95/Eglise_Saint-Vincent-de-Paul_-_Laval_-_02.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Papineau-Leblanc_Bridge.jpg/640px-Papineau-Leblanc_Bridge.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -337,7 +337,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Warwick",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/V%C3%A9lo-gare_de_Warwick.jpg/800px-V%C3%A9lo-gare_de_Warwick.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/V%C3%A9lo-gare_de_Warwick.jpg/640px-V%C3%A9lo-gare_de_Warwick.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -351,7 +351,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Nicolet",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Nicolet.JPG/800px-Nicolet.JPG",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cath%C3%A9drale_Saint-Jean-Baptiste_de_Nicolet.jpg/635px-Cath%C3%A9drale_Saint-Jean-Baptiste_de_Nicolet.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -379,7 +379,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Trois-Rivières",
                 Image = new Image
                 {
-                    Chemin = "https://content.r9cdn.net/rimg/dimg/51/31/74c40811-city-51547-17105d93f01.jpg?crop=true&amp;width=1000&amp;height=400&amp;xhint=2255&amp;yhint=3200",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Porte_Pacifique-Duplessis.jpg/640px-Porte_Pacifique-Duplessis.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
@@ -393,7 +393,7 @@ namespace A_villes_d_oiseau.Donnees
                 Nom = "Plessisville",
                 Image = new Image
                 {
-                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Centre-ville_de_Plessisville.jpg/800px-Centre-ville_de_Plessisville.jpg",
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Centre-ville_de_Plessisville.jpg/640px-Centre-ville_de_Plessisville.jpg",
                 },
                 Coordonnees = new GeoCoordinate
                 {
