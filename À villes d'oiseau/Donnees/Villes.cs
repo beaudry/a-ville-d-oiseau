@@ -907,6 +907,7 @@ namespace A_villes_d_oiseau.Donnees
                 Image = new Image
                 {
                     Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Phare_de_Cap-Chat.jpg/640px-Phare_de_Cap-Chat.jpg",
+                    Position = "left",
                 },
                 Coordonnees = new GeoCoordinate
                 {

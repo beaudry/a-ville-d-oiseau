@@ -64,10 +64,6 @@ footer {
     margin-bottom: -2em;
 }
 
-#entete {
-    display: flex;
-}
-
 .panneau-controle {
     flex: 1;
 }
@@ -174,6 +170,7 @@ meter {
     }
 
     .cartes {
+        gap: 8px;
         justify-content: center;
     }
 
