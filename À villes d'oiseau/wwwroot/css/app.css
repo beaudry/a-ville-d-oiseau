@@ -35,15 +35,15 @@ h1, .h1 {
     font-size: 2.5rem;
 }
 h2, .h2 {
-    font-size: 2rem;
-}
-
-h3, .h3 {
     font-size: 1.75rem;
 }
 
-h4, .h4 {
+h3, .h3 {
     font-size: 1.5rem;
+}
+
+h4, .h4 {
+    font-size: 1.25rem;
 }
 
 legend {
@@ -99,8 +99,8 @@ meter {
 }
 
 .carte {
-    width: 240px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -149,19 +149,6 @@ meter {
     align-items: center;
     background-color: rgba(255,255,255,1);
     padding: 0 1em;
-}
-
-.filigrane {
-    position: absolute;
-    top: 40px;
-    left: -60px;
-    font-weight: bold;
-    word-break: break-all;
-    transform: rotate(-45deg);
-    transform-origin: top left;
-    color: rgba(0,0,0,0.13);
-    width: 350px;
-    line-height: 1.25;
 }
 
 @media print {

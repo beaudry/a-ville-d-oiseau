@@ -1044,7 +1044,123 @@ namespace A_villes_d_oiseau.Donnees
                 },
                 LienWikipedia = "https://fr.wikipedia.org/wiki/Sainte-Croix_(Qu%C3%A9bec)",
             },
+            new Ville
+            {
+                Nom = "Cowansville",
+                Image = new Image
+                {
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/b/b4/Maison_nesbitt_1.jpg",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 45.204656930233114,
+                    Longitude = -72.7408031694053,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Cowansville",
+            },
+            new Ville
+            {
+                Nom = "Amos",
+                Image = new Image
+                {
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/8/82/Cath%C3%A9draleAmos.jpg",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 48.56460844253458,
+                    Longitude = -78.11330509661694,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Amos_(Qu%C3%A9bec)",
+            },
+            new Ville
+            {
+                Nom = "Belœil",
+                Image = new Image
+                {
+                    Chemin = "https://tourismevalleedurichelieu.ca/wp-content/uploads/2022/06/1.jpg",
+                    Position = "left",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 45.567233201372105,
+                    Longitude = -73.20243557299591,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Bel%C5%93il_(Qu%C3%A9bec)",
+            },
+            new Ville
+            {
+                Nom = "Terrebonne",
+                Image = new Image
+                {
+                    Chemin = "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTk38k4IH-_rNTDOHilfZhyeOhczV_Hepfd8LU5IOwErnc3XbmblbDjSHsEDuBYEgVJTcg5uBRa44C6I6uol7e2odPIIIGwnPlQP8g4rg",
+                    Position = "right",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 45.69165417435173,
+                    Longitude = -73.63449629572908,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Terrebonne",
+            },
+            new Ville
+            {
+                Nom = "Repentigny",
+                Image = new Image
+                {
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Repentigny_Notre_Dame_des_Champs_02.jpg/320px-Repentigny_Notre_Dame_des_Champs_02.jpg",
+                    Position = "left",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 45.741910521350185,
+                    Longitude = -73.45137238832827,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Repentigny_(Qu%C3%A9bec)",
+            },
+            new Ville
+            {
+                Nom = "Trois-Pistoles",
+                Image = new Image
+                {
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/d/d8/L%27heritage_I.jpg",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 48.125576834276615,
+                    Longitude = -69.17517675769288,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Trois-Pistoles",
+            },
+            new Ville
+            {
+                Nom = "Rivière-du-Loup",
+                Image = new Image
+                {
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Parc-des-Chutes.jpg/800px-Parc-des-Chutes.jpg",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 47.835898785638115,
+                    Longitude = -69.53656334587576,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Rivi%C3%A8re-du-Loup",
+            },
+            new Ville
+            {
+                Nom = "Saint-Constant",
+                Image = new Image
+                {
+                    Chemin = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Crm_trains1.jpg/320px-Crm_trains1.jpg",
+                },
+                Coordonnees = new GeoCoordinate
+                {
+                    Latitude = 45.37171238995326,
+                    Longitude =  -73.57116939204859,
+                },
+                LienWikipedia = "https://fr.wikipedia.org/wiki/Saint-Constant",
+            },
         };
+
         public static readonly Dictionary<string, Ville> ParNom = Toutes.ToDictionary(ville => ville.Nom);
     }
 }
